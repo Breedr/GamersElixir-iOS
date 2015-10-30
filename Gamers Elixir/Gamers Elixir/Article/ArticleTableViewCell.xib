@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="articleCell" rowHeight="220" id="KGk-i7-Jjw" customClass="ArticleTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="219.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Test" translatesAutoresizingMaskIntoConstraints="NO" id="EHk-dL-E23">
+                        <rect key="frame" x="0.0" y="0.0" width="332" height="219.5"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
+                        </accessibility>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="255" id="MMO-9C-pmd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MMO-9C-pmd"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PqY-qg-GDX">
+                        <rect key="frame" x="0.0" y="167.5" width="332" height="44"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIJ-zc-szM">
+                        <rect key="frame" x="0.0" y="131.5" width="332" height="36"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OBB-NY-Dm3">
+                                <rect key="frame" x="8" y="7" width="316" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OBB-NY-Dm3" secondAttribute="bottom" constant="8" id="2Jg-8w-Zjf"/>
+                            <constraint firstAttribute="height" constant="36" id="8qW-kO-gE4"/>
+                            <constraint firstAttribute="trailing" secondItem="OBB-NY-Dm3" secondAttribute="trailing" constant="8" id="KNs-eF-T9l"/>
+                            <constraint firstItem="OBB-NY-Dm3" firstAttribute="top" secondItem="dIJ-zc-szM" secondAttribute="top" constant="7" id="P2z-vP-vaS"/>
+                            <constraint firstItem="OBB-NY-Dm3" firstAttribute="leading" secondItem="dIJ-zc-szM" secondAttribute="leading" constant="8" id="qBX-nX-XGm"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Cr-i3-Tp0" customClass="NRLabel">
+                        <rect key="frame" x="232" y="8" width="100" height="13.5"/>
+                        <color key="backgroundColor" red="1" green="0.75686274509803919" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="rz0-H8-d1p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4T4-D3-KrM">
+                        <rect key="frame" x="0.0" y="211" width="332" height="8.5"/>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8.5" id="k0k-QD-fDD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="4T4-D3-KrM" secondAttribute="trailing" constant="-8" id="13j-yf-fYB"/>
+                    <constraint firstItem="3Cr-i3-Tp0" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="6UL-g7-Zjr"/>
+                    <constraint firstItem="EHk-dL-E23" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="7Ee-xL-N0I"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PqY-qg-GDX" secondAttribute="bottom" constant="-7.5" id="7HN-ak-g1k"/>
+                    <constraint firstItem="PqY-qg-GDX" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.2" id="7dX-b6-F1P"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PqY-qg-GDX" secondAttribute="trailing" constant="-8" id="8XS-Hw-i2S"/>
+                    <constraint firstItem="PqY-qg-GDX" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="A4A-DD-Dw3"/>
+                    <constraint firstItem="PqY-qg-GDX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="CK8-BE-Uu9"/>
+                    <constraint firstItem="4T4-D3-KrM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="Ek5-EU-3ml"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="EHk-dL-E23" secondAttribute="bottom" constant="-8" id="HXk-d0-O66"/>
+                    <constraint firstAttribute="trailing" secondItem="dIJ-zc-szM" secondAttribute="trailing" id="UEn-AR-vei"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3Cr-i3-Tp0" secondAttribute="trailing" constant="-8" id="a7U-Jv-psl"/>
+                    <constraint firstItem="3Cr-i3-Tp0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="cnH-70-nLf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4T4-D3-KrM" secondAttribute="bottom" constant="-8" id="efO-gF-bcO"/>
+                    <constraint firstItem="EHk-dL-E23" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="elL-nH-qm0"/>
+                    <constraint firstItem="3Cr-i3-Tp0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="geU-Dn-ZAu"/>
+                    <constraint firstItem="dIJ-zc-szM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jHh-Iq-R60"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="EHk-dL-E23" secondAttribute="trailing" constant="-8" id="r0x-f0-Ji6"/>
+                    <constraint firstItem="PqY-qg-GDX" firstAttribute="top" secondItem="dIJ-zc-szM" secondAttribute="bottom" id="tkO-XV-GPP"/>
+                    <constraint firstItem="3Cr-i3-Tp0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="x1T-MF-LmB"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="7HN-ak-g1k"/>
+                        <exclude reference="6UL-g7-Zjr"/>
+                        <exclude reference="x1T-MF-LmB"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="articleImage" destination="EHk-dL-E23" id="ze1-Um-fuG"/>
+                <outlet property="articleLabel" destination="3Cr-i3-Tp0" id="knz-Nj-n9g"/>
+                <outlet property="articleTitle" destination="OBB-NY-Dm3" id="L9v-O5-vI6"/>
+            </connections>
+            <point key="canvasLocation" x="439" y="448"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Test" width="1280" height="720"/>
+    </resources>
+</document>
