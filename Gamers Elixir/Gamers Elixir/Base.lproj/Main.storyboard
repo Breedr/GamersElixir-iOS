@@ -35,20 +35,22 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rJ0-yd-pnZ" secondAttribute="bottom" constant="20" id="oCk-v9-mkP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Gamers Elixir" id="QxG-cA-z1w"/>
+                    <navigationItem key="navigationItem" title="Gamers Elixir" id="QxG-cA-z1w">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="QuI-sA-z6w"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="rJ0-yd-pnZ" id="nrt-jI-Syi"/>
-                        <segue destination="yX9-sS-eJY" kind="show" id="U7G-LF-wep"/>
+                        <segue destination="yX9-sS-eJY" kind="show" identifier="showArticleDetailSegue" id="U7G-LF-wep"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="342"/>
+            <point key="canvasLocation" x="163" y="448"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="Pab-aK-QUe">
             <objects>
-                <viewController id="yX9-sS-eJY" sceneMemberID="viewController">
+                <viewController id="yX9-sS-eJY" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aG2-Za-TPA"/>
                         <viewControllerLayoutGuide type="bottom" id="0He-n6-hGk"/>
@@ -56,12 +58,34 @@
                     <view key="view" contentMode="scaleToFill" id="H8s-bK-uSv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Test" translatesAutoresizingMaskIntoConstraints="NO" id="vDI-4Q-cqv">
+                                <rect key="frame" x="0.0" y="64" width="600" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="dRC-iM-0ns"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47P-xy-kd1">
+                                <rect key="frame" x="0.0" y="272" width="600" height="328"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="47P-xy-kd1" firstAttribute="leading" secondItem="H8s-bK-uSv" secondAttribute="leadingMargin" constant="-20" id="NVC-I6-kk4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vDI-4Q-cqv" secondAttribute="trailing" constant="-20" id="PfK-uS-4VH"/>
+                            <constraint firstItem="vDI-4Q-cqv" firstAttribute="top" secondItem="aG2-Za-TPA" secondAttribute="bottom" id="Q6z-ni-ETd"/>
+                            <constraint firstItem="47P-xy-kd1" firstAttribute="top" secondItem="vDI-4Q-cqv" secondAttribute="bottom" constant="8" id="Rfs-K8-MPZ"/>
+                            <constraint firstItem="vDI-4Q-cqv" firstAttribute="leading" secondItem="H8s-bK-uSv" secondAttribute="leadingMargin" constant="-20" id="VKs-R5-fzt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="47P-xy-kd1" secondAttribute="trailing" constant="-20" id="Xrc-hO-ABx"/>
+                            <constraint firstItem="0He-n6-hGk" firstAttribute="top" secondItem="47P-xy-kd1" secondAttribute="bottom" id="xwU-5N-N0h"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FYW-qe-V6W"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3F-t4-rOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1018" y="331"/>
+            <point key="canvasLocation" x="927" y="448"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cn4-ZG-MAg">
@@ -77,7 +101,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXS-q8-cxR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-410" y="284"/>
+            <point key="canvasLocation" x="285" y="-267"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Test" width="1280" height="720"/>
+    </resources>
 </document>

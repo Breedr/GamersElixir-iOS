@@ -11,6 +11,7 @@
 		1D0DD3AF1BE3B65100E714FB /* ArticleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0DD3AD1BE3B65100E714FB /* ArticleTableViewCell.m */; };
 		1D0DD3B01BE3B65100E714FB /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1D0DD3AE1BE3B65100E714FB /* ArticleTableViewCell.xib */; };
 		1D0DD3B31BE3C8A500E714FB /* NRLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0DD3B21BE3C8A500E714FB /* NRLabel.m */; };
+		1D0DD3B71BE3E66F00E714FB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0DD3B61BE3E66F00E714FB /* DetailViewController.m */; };
 		1D44D4B41BE35B5E005936DA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D44D4B31BE35B5E005936DA /* main.m */; };
 		1D44D4B71BE35B5E005936DA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D44D4B61BE35B5E005936DA /* AppDelegate.m */; };
 		1D44D4BA1BE35B5E005936DA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D44D4B91BE35B5E005936DA /* ViewController.m */; };
@@ -46,6 +47,8 @@
 		1D0DD3AE1BE3B65100E714FB /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ArticleTableViewCell.xib; path = Article/ArticleTableViewCell.xib; sourceTree = "<group>"; };
 		1D0DD3B11BE3C8A500E714FB /* NRLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NRLabel.h; sourceTree = "<group>"; };
 		1D0DD3B21BE3C8A500E714FB /* NRLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NRLabel.m; sourceTree = "<group>"; };
+		1D0DD3B51BE3E66F00E714FB /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1D0DD3B61BE3E66F00E714FB /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		1D44D4AF1BE35B5E005936DA /* Gamers Elixir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gamers Elixir.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D44D4B31BE35B5E005936DA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D44D4B51BE35B5E005936DA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,6 +145,8 @@
 			children = (
 				1D44D4B81BE35B5E005936DA /* ViewController.h */,
 				1D44D4B91BE35B5E005936DA /* ViewController.m */,
+				1D0DD3B51BE3E66F00E714FB /* DetailViewController.h */,
+				1D0DD3B61BE3E66F00E714FB /* DetailViewController.m */,
 				1D44D4BB1BE35B5E005936DA /* Main.storyboard */,
 				1D44D4BE1BE35B5E005936DA /* Assets.xcassets */,
 				1D44D4C01BE35B5E005936DA /* LaunchScreen.storyboard */,
@@ -319,6 +324,7 @@
 				1D0DD3A61BE35E9800E714FB /* UIColor+CustomColors.m in Sources */,
 				1D0DD3AF1BE3B65100E714FB /* ArticleTableViewCell.m in Sources */,
 				1D44D4B41BE35B5E005936DA /* main.m in Sources */,
+				1D0DD3B71BE3E66F00E714FB /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
