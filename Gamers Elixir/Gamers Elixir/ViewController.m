@@ -44,12 +44,13 @@
 {
     if ([[segue identifier] isEqualToString:@"showArticleDetailSegue"])
     {
-        DetailViewController *vc = [segue destinationViewController];
-        // Pass any objects to the view controller here, like...
-        vc.title = @"Stub Story";
+        if([segue.destinationViewController isKindOfClass:[DetailViewController class]]){
+            DetailViewController *vc = (DetailViewController *) [segue destinationViewController];
+            // Pass any objects to the view controller here, like...
+            vc.title = @"Stub Story";
+        }
     }
 }
-
 
 
 // MARK: - Table Methods
@@ -64,6 +65,7 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"%ld", (long)indexPath.row);
     [self performSegueWithIdentifier:@"showArticleDetailSegue" sender:nil];
 }
 

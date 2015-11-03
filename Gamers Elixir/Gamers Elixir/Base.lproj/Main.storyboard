@@ -67,6 +67,21 @@
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47P-xy-kd1">
                                 <rect key="frame" x="0.0" y="272" width="600" height="328"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0Y-K6-IQR" customClass="JCTagListView">
+                                        <rect key="frame" x="0.0" y="8" width="600" height="221"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="221" id="SJZ-ml-X50"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="h0Y-K6-IQR" secondAttribute="bottom" constant="99" id="7k7-YH-06P"/>
+                                    <constraint firstAttribute="trailing" secondItem="h0Y-K6-IQR" secondAttribute="trailing" id="KNv-4f-xRL"/>
+                                    <constraint firstItem="h0Y-K6-IQR" firstAttribute="leading" secondItem="47P-xy-kd1" secondAttribute="leading" id="Oyw-P2-GgC"/>
+                                    <constraint firstItem="h0Y-K6-IQR" firstAttribute="top" secondItem="47P-xy-kd1" secondAttribute="top" constant="8" id="dKu-so-sXf"/>
+                                    <constraint firstItem="h0Y-K6-IQR" firstAttribute="centerX" secondItem="47P-xy-kd1" secondAttribute="centerX" id="fZ9-m0-XQ1"/>
+                                </constraints>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,7 +96,16 @@
                             <constraint firstItem="0He-n6-hGk" firstAttribute="top" secondItem="47P-xy-kd1" secondAttribute="bottom" id="xwU-5N-N0h"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="FYW-qe-V6W"/>
+                    <navigationItem key="navigationItem" id="FYW-qe-V6W">
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="iPv-NM-yvq">
+                            <connections>
+                                <action selector="shareButtonClicked:" destination="yX9-sS-eJY" id="G3W-JK-bGI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tagView" destination="h0Y-K6-IQR" id="kDJ-jR-sr6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3F-t4-rOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

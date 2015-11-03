@@ -7,8 +7,12 @@
 //
 
 #import "DetailViewController.h"
+#import "UIColor+CustomColors.h"
+#import "NSArray+Map.h"
+#import "JCTagListView.h"
 
 @interface DetailViewController ()
+@property (weak, nonatomic) IBOutlet JCTagListView *tagView;
 
 @end
 
@@ -16,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self populateTags];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,14 +28,32 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
+-(void)populateTags{
+    
+    NSArray *tags = @[@"Gaming News", @"Test me", @"hello world", @"j-fg", @"i enjoy pancakes", @"Gaming News", @"Test me", @"hello world", @"j-fg", @"i enjoy pancakes"];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    
+    self.tagView.canSeletedTags = NO;
+    self.tagView.tagColor = [UIColor GE_Twitch];
+    self.tagView.tagCornerRadius = 2.0f;
+    self.tagView.tags = [[tags mapObjectsUsingBlock:^(id obj, NSUInteger idx) {
+        return [obj uppercaseString];
+    }] mutableCopy];
+
 }
-*/
+
+- (IBAction)shareButtonClicked:(id)sender {
+    NSLog(@"share clicked");
+}
+
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end
