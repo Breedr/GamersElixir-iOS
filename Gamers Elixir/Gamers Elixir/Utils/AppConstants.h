@@ -11,6 +11,8 @@
 @interface AppConstants : NSObject
 
 extern NSString* const GE_RSSBaseUrl;
+extern NSString* const GE_TwitchBaseURL;
+extern NSString* const GE_TwitchWebBaseURL;
 extern NSString* const GE_ForumUrl;
 extern NSString* const GE_FacebookUrl;
 extern NSString* const GE_TwitterUrl;

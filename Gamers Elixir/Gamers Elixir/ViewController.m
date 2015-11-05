@@ -30,6 +30,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     self.navigationController.navigationBar.barTintColor = [UIColor GE_Yellow];
+    self.tabBarController.tabBar.barTintColor = [UIColor GE_Yellow];
     [self.navigationController.navigationBar setTitleTextAttributes:
      @{NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }

@@ -21,6 +21,8 @@
 		1D44D4CD1BE35B5E005936DA /* Gamers_ElixirTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D44D4CC1BE35B5E005936DA /* Gamers_ElixirTests.m */; };
 		1D44D4D81BE35B5E005936DA /* Gamers_ElixirUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D44D4D71BE35B5E005936DA /* Gamers_ElixirUITests.m */; };
 		1D7E13E81BE7684400B5F471 /* AppConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D7E13E71BE7684400B5F471 /* AppConstants.m */; };
+		1DA3775B1BE9F2860014DCD1 /* StreamerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3775A1BE9F2860014DCD1 /* StreamerViewController.m */; };
+		1DA3775E1BEA28CC0014DCD1 /* Streamer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DA3775D1BEA28CC0014DCD1 /* Streamer.m */; };
 		1DDB63A31BE8A08400597CF8 /* JCCollectionViewTagFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB639E1BE8A08400597CF8 /* JCCollectionViewTagFlowLayout.m */; };
 		1DDB63A41BE8A08400597CF8 /* JCTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB63A01BE8A08400597CF8 /* JCTagCell.m */; };
 		1DDB63A51BE8A08400597CF8 /* JCTagListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DDB63A21BE8A08400597CF8 /* JCTagListView.m */; };
@@ -73,6 +75,10 @@
 		1D44D4D91BE35B5E005936DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D7E13E61BE7684400B5F471 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppConstants.h; path = Utils/AppConstants.h; sourceTree = "<group>"; };
 		1D7E13E71BE7684400B5F471 /* AppConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppConstants.m; path = Utils/AppConstants.m; sourceTree = "<group>"; };
+		1DA377591BE9F2860014DCD1 /* StreamerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StreamerViewController.h; path = Streamers/StreamerViewController.h; sourceTree = "<group>"; };
+		1DA3775A1BE9F2860014DCD1 /* StreamerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StreamerViewController.m; path = Streamers/StreamerViewController.m; sourceTree = "<group>"; };
+		1DA3775C1BEA28CC0014DCD1 /* Streamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Streamer.h; path = Streamers/Streamer.h; sourceTree = "<group>"; };
+		1DA3775D1BEA28CC0014DCD1 /* Streamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Streamer.m; path = Streamers/Streamer.m; sourceTree = "<group>"; };
 		1DDB639D1BE8A08400597CF8 /* JCCollectionViewTagFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCCollectionViewTagFlowLayout.h; path = CustomViews/JCCollectionViewTagFlowLayout.h; sourceTree = "<group>"; };
 		1DDB639E1BE8A08400597CF8 /* JCCollectionViewTagFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JCCollectionViewTagFlowLayout.m; path = CustomViews/JCCollectionViewTagFlowLayout.m; sourceTree = "<group>"; };
 		1DDB639F1BE8A08400597CF8 /* JCTagCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JCTagCell.h; path = CustomViews/JCTagCell.h; sourceTree = "<group>"; };
@@ -179,6 +185,8 @@
 				1D44D4B91BE35B5E005936DA /* ViewController.m */,
 				1D0DD3B51BE3E66F00E714FB /* DetailViewController.h */,
 				1D0DD3B61BE3E66F00E714FB /* DetailViewController.m */,
+				1DA377591BE9F2860014DCD1 /* StreamerViewController.h */,
+				1DA3775A1BE9F2860014DCD1 /* StreamerViewController.m */,
 				1D44D4BB1BE35B5E005936DA /* Main.storyboard */,
 				1D44D4BE1BE35B5E005936DA /* Assets.xcassets */,
 				1D44D4C01BE35B5E005936DA /* LaunchScreen.storyboard */,
@@ -187,6 +195,8 @@
 				1D0DD3B41BE3C98B00E714FB /* Views */,
 				1D0DD3A71BE370D900E714FB /* Utils */,
 				1D44D4B21BE35B5E005936DA /* Supporting Files */,
+				1DA3775C1BEA28CC0014DCD1 /* Streamer.h */,
+				1DA3775D1BEA28CC0014DCD1 /* Streamer.m */,
 			);
 			path = "Gamers Elixir";
 			sourceTree = "<group>";
@@ -424,9 +434,11 @@
 				1D0DD3A61BE35E9800E714FB /* UIColor+CustomColors.m in Sources */,
 				1D0DD3AF1BE3B65100E714FB /* ArticleTableViewCell.m in Sources */,
 				1D44D4B41BE35B5E005936DA /* main.m in Sources */,
+				1DA3775E1BEA28CC0014DCD1 /* Streamer.m in Sources */,
 				1DDB63A31BE8A08400597CF8 /* JCCollectionViewTagFlowLayout.m in Sources */,
 				1DDB63A41BE8A08400597CF8 /* JCTagCell.m in Sources */,
 				1DDB63A51BE8A08400597CF8 /* JCTagListView.m in Sources */,
+				1DA3775B1BE9F2860014DCD1 /* StreamerViewController.m in Sources */,
 				1DDB63A81BE8A3A800597CF8 /* NSArray+Map.m in Sources */,
 				1D0DD3B71BE3E66F00E714FB /* DetailViewController.m in Sources */,
 				1D7E13E81BE7684400B5F471 /* AppConstants.m in Sources */,

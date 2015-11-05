@@ -33,9 +33,10 @@
     NSArray *tags = @[@"Gaming News", @"Test me", @"hello world", @"j-fg", @"i enjoy pancakes", @"Gaming News", @"Test me", @"hello world", @"j-fg", @"i enjoy pancakes"];
 
     
-    self.tagView.canSeletedTags = NO;
-    self.tagView.tagColor = [UIColor GE_Twitch];
-    self.tagView.tagCornerRadius = 2.0f;
+    self.tagView.canSelectTags = NO;
+    self.tagView.tagStrokeColor = [UIColor GE_Yellow];
+    self.tagView.tagBackgroundColor = [UIColor GE_Yellow];
+    self.tagView.tagCornerRadius = 4.0f;
     self.tagView.tags = [[tags mapObjectsUsingBlock:^(id obj, NSUInteger idx) {
         return [obj uppercaseString];
     }] mutableCopy];
@@ -45,15 +46,5 @@
 - (IBAction)shareButtonClicked:(id)sender {
     NSLog(@"share clicked");
 }
-
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
 @end

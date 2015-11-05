@@ -11,6 +11,8 @@
 @implementation AppConstants
 
 NSString* const GE_RSSBaseUrl = @"http://www.gamerselixir.com/feed/";
+NSString* const GE_TwitchBaseURL = @"https://api.twitch.tv/kraken";
+NSString* const GE_TwitchWebBaseURL = @"http://api.twitch.tv/api";
 NSString* const GE_ForumUrl = @"http://www.gamerselixir.com/forums/";
 NSString* const GE_FacebookUrl = @"https://www.facebook.com/GamersElixir";
 NSString* const GE_TwitterUrl = @"https://twitter.com/GamersElixir";

@@ -42,6 +42,11 @@
 	<dict>
 		<key>NSExceptionDomains</key>
 		<dict>
+			<key>api.twitch.tv</key>
+			<dict>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+			</dict>
 			<key>www.gamerselixir.com</key>
 			<dict>
 				<key>NSExceptionAllowsInsecureHTTPLoads</key>

@@ -1,11 +1,68 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="YVP-Kp-s9c">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="EEe-UJ-Wky">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="oPG-4v-Qdv">
+            <objects>
+                <tabBarController id="EEe-UJ-Wky" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="SQy-gi-cTg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="YVP-Kp-s9c" kind="relationship" relationship="viewControllers" id="tKE-QX-qhJ"/>
+                        <segue destination="7df-d5-eU9" kind="relationship" relationship="viewControllers" id="1L2-6I-60U"/>
+                        <segue destination="rEu-dm-vqg" kind="relationship" relationship="viewControllers" id="M1u-Pr-zj9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gQe-nE-Z0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-957" y="-360"/>
+        </scene>
+        <!--Forum-->
+        <scene sceneID="PQM-g1-Xvc">
+            <objects>
+                <viewController id="rEu-dm-vqg" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UU7-Zt-VFV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ky1-Ta-EMb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Va-vE-iIu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.78890830592105265" green="0.88576788651315785" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Forum" image="forum_icn" id="V9J-OI-7ah"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wdw-1i-EBl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="-1087"/>
+        </scene>
+        <!--Streamers-->
+        <scene sceneID="gZS-Bl-Ucy">
+            <objects>
+                <viewController id="7df-d5-eU9" customClass="StreamerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oe1-Yb-tFk"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qla-xN-D64"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="INv-bb-7qk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="0.25966282894736842" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Streamers" image="streamer_icn" id="glg-lX-0hk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAB-am-UcB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119" y="-360"/>
+        </scene>
         <!--Gamers Elixir-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -19,7 +76,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rJ0-yd-pnZ">
-                                <rect key="frame" x="20" y="84" width="560" height="496"/>
+                                <rect key="frame" x="20" y="84" width="560" height="447"/>
                                 <color key="backgroundColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="lNC-n1-xbS"/>
@@ -45,7 +102,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="163" y="448"/>
+            <point key="canvasLocation" x="119" y="437"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="Pab-aK-QUe">
@@ -66,10 +123,10 @@
                                 </constraints>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="47P-xy-kd1">
-                                <rect key="frame" x="0.0" y="272" width="600" height="328"/>
+                                <rect key="frame" x="0.0" y="272" width="600" height="279"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h0Y-K6-IQR" customClass="JCTagListView">
-                                        <rect key="frame" x="0.0" y="8" width="600" height="221"/>
+                                        <rect key="frame" x="16" y="8" width="568" height="221"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="221" id="SJZ-ml-X50"/>
                                         </constraints>
@@ -77,11 +134,19 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="h0Y-K6-IQR" secondAttribute="bottom" constant="99" id="7k7-YH-06P"/>
+                                    <constraint firstItem="h0Y-K6-IQR" firstAttribute="leading" secondItem="47P-xy-kd1" secondAttribute="leading" constant="16" id="FqL-Lc-UWz"/>
                                     <constraint firstAttribute="trailing" secondItem="h0Y-K6-IQR" secondAttribute="trailing" id="KNv-4f-xRL"/>
                                     <constraint firstItem="h0Y-K6-IQR" firstAttribute="leading" secondItem="47P-xy-kd1" secondAttribute="leading" id="Oyw-P2-GgC"/>
                                     <constraint firstItem="h0Y-K6-IQR" firstAttribute="top" secondItem="47P-xy-kd1" secondAttribute="top" constant="8" id="dKu-so-sXf"/>
                                     <constraint firstItem="h0Y-K6-IQR" firstAttribute="centerX" secondItem="47P-xy-kd1" secondAttribute="centerX" id="fZ9-m0-XQ1"/>
+                                    <constraint firstAttribute="trailing" secondItem="h0Y-K6-IQR" secondAttribute="trailing" constant="16" id="lgO-fc-Ouf"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="KNv-4f-xRL"/>
+                                        <exclude reference="Oyw-P2-GgC"/>
+                                    </mask>
+                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
@@ -109,12 +174,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3F-t4-rOi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="927" y="448"/>
+            <point key="canvasLocation" x="835" y="437"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Feed-->
         <scene sceneID="Cn4-ZG-MAg">
             <objects>
                 <navigationController id="YVP-Kp-s9c" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Feed" image="news_icn" id="dGJ-p4-VnM"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9vR-j7-SLG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -125,10 +191,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pXS-q8-cxR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="285" y="-267"/>
+            <point key="canvasLocation" x="-957" y="437"/>
         </scene>
     </scenes>
     <resources>
         <image name="Test" width="1280" height="720"/>
+        <image name="forum_icn" width="32" height="32"/>
+        <image name="news_icn" width="32" height="32"/>
+        <image name="streamer_icn" width="32" height="32"/>
     </resources>
 </document>
